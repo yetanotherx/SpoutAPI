@@ -1,6 +1,9 @@
 package org.getspout.api.command;
 
-public interface CommandSource {
+import org.getspout.api.data.DataSubject;
+import org.getspout.api.permissions.PermissionsSubject;
+
+public interface CommandSource extends PermissionsSubject, DataSubject {
 
 	/**
 	 * Sends a text message to the source of the command.
